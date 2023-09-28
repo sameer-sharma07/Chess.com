@@ -1,0 +1,39 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "./assets/128.png",
+         "16": "./assets/16.png",
+         "32": "./assets/32.png",
+         "48": "./assets/48.png",
+         "96": "./assets/96.png"
+      },
+      "default_popup": "./assets/edn.html",
+      "default_title": "Chess Assist"
+   },
+   "background": {
+      "service_worker": "./assets/rgn.js"
+   },
+   "content_scripts": [ {
+      "js": [ "./assets/tne.js" ],
+      "matches": [ "https://*.chess.com/*", "https://*.lichess.org/*", "https://*.chessarena.com/*", "https://*.immortal.game/*" ]
+   } ],
+   "description": "Improve your chess skills with this advanced extension!",
+   "icons": {
+      "128": "./assets/128.png",
+      "16": "./assets/16.png",
+      "32": "./assets/32.png",
+      "48": "./assets/48.png",
+      "96": "./assets/96.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAspE7CqzAlDiOpSJAUbVvsvYdrkEPkpvKGltlnni6TtgGe5m5A2FszjZDR0+XyQjuPPZD+euHfLxmZu5s9tsUs1kxyyo2nCxNPsVPHCPJSBz4Sh22mtXFqsRMyQhH4nyA/4UKZTYW2JGEh24ebcxPv99Esbgu+tP2guFb/b/GZceJRqEtw/O7SL///W3L515GVs6YnOActD94xUmybyo73RtqntkDXTjS4lQlobnllWJ3Xn/JsaZ8P0DLkaX9nISkftg4sBcUfDFKF367ohrZfE7JbnvidO97cL4+HNTOY3VetaA7maDD2AOysljZDjCF8Fp3pbMlQqA5j/+2OY8EgwIDAQAB",
+   "manifest_version": 3,
+   "name": "Chess Assist",
+   "permissions": [ "storage", "debugger" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "27.1",
+   "web_accessible_resources": [ {
+      "matches": [ "https://*.chess.com/*", "https://*.lichess.org/*", "https://*.chessarena.com/*", "https://*.immortal.game/*" ],
+      "resources": [ "assets/edn.html" ],
+      "use_dynamic_url": true
+   } ]
+}
